@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Slabo 27px', serif;
+    font-size: 14px;
+    text-decoration: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    outline: none;  
+}
+
+body{
+    background-color: rgb(255, 229, 232);
+}
+
+input{
+    height: 26px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding-left: 5px;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.button-search{
+    padding: 3px;
+    margin-left: -28px;
+    font-size: 16px;
+}
+
+.button-search:hover{
+    cursor: pointer;
+    color: rgb(165, 42, 42);
+    
+}
+.container{
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+    user-select: none;
+}
+
+.block{
+    position: relative;
+    min-width: 320px;;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 6px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.block:first-child{
+    transition-property: margin-left;
+    transition-duration: 0.5s;
+}
+
+.videoName{
+    position: absolute;
+    width: 310px;
+    text-align: center;
+    top: 20px;
+    left: 4px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.videoName a{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.videoName a:hover{
+    color: rgb(128, 128, 128);
+}
+
+.author{
+    height: 41px;
+    margin-top: 5px;
+}
+
+.date{
+    margin: 0;
+}
+
+.views{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+span{
+    width: 100%;
+    overflow: hidden;
+}
+
+.navigation{
+    display: none;
+    justify-content: center;
+    padding: 20px;
+}
+
+.navigation button{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    padding-bottom: 3px;
+    padding-left: 1px;
+    transition: all .3s linear;
+    font-size: 17px;
+}
+.navigation button:not(.currentPage){
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.navigation button:hover{
+    transform: scale(1.2);
+    border-color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+.currentPage{
+    background-color: rgb(255, 0, 0);
+    color: wheat;
+    border: none;
+}
+
+[class^="icon-"]{
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: -4px;
+}
+
+.error{
+    font-size: 20px;
+}
+
+img {
+    width: 310px;
+    margin-left: -2px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+}
+
+.firstPage{
+    margin-left: 10px;
+}
